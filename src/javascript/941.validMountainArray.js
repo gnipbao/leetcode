@@ -1,7 +1,7 @@
 /**
  * @param {number[]} A
  * @return {boolean}
- * double pointer
+ * Two Pointers
  * Complexity Analysis
  * Time complexity : O(n).
  * Space complexity : O(1).
