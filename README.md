@@ -1,4 +1,1 @@
 # leetcode 
-
-js for leetcode
-
