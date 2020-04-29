@@ -8,7 +8,7 @@
 /**
  * @param {TreeNode} root
  * @return {boolean}
- *
+ * Recursive Approach
  */
 var isValidBST = function (root) {
   function helper(node, lower, upper) {
@@ -33,7 +33,7 @@ var isValidBST = function (root) {
 /**
  * @param {TreeNode} root
  * @return {boolean}
- *  inordertraversal order
+ *  Inordertraversal order
  */
 var isValidBST = function (root) {
   const stack = [];
