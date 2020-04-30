@@ -37,7 +37,7 @@ var isValidBST = function (root) {
  */
 var isValidBST = function (root) {
   const stack = [];
-  let inorder = -Infinity;
+  let inorder = -Number.MAX_SAFE_INTEGER;
   while (root || stack.length) {
     while (root) {
       stack.push(root);
