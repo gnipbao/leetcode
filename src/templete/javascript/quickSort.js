@@ -1,15 +1,18 @@
 function quickSort(arr) {
+  // terminator
   if (arr.length <= 1) return arr;
-  const left = [],
+  // process current logic
+  let left = [],
     right = [];
-  const povitIndex = Math.floor(arr.length >> 1);
-  const povit = arr.splice(povitIndex, 1)[0];
+  let pivotIndex = Math.floor(arr.length >> 1);
+  let pivot = arr.splice(povitIndex, 1)[0];
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] < povit) {
+    if (arr[i] < pivot) {
       left.push(arr[i]);
     } else {
       right.push(arr[i]);
     }
   }
-  return quickSort(left).concat([povit], quickSort(right));
+  // drill down
+  return quickSort(left).concat([pivot], quickSort(right));
 }
