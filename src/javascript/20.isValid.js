@@ -20,3 +20,20 @@ var isValid = function (s) {
   }
   return stack.length === 0;
 };
+
+/**
+ * @param {string} s
+ * @return {boolean}
+ * stack
+ */
+var isValid = function (s) {
+  if (s.length == 0) return true;
+  let stack = [];
+  for (i of s) {
+    if (i == "(") stack.push(")");
+    else if (i == "{") stack.push("}");
+    else if (i == "[") stack.push("]");
+    else if (stack.length == 0 || stack.pop() != i) return false;
+  }
+  return stack.length === 0;
+};
