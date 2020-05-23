@@ -15,7 +15,7 @@ var levelOrder = function (root) {
   function helper(node, level) {
     // recursion terminator
     if (node == null) {
-      return res;
+      return;
     }
     // process logic in current level
     if (res.length == level) {

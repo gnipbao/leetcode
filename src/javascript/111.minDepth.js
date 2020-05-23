@@ -13,8 +13,9 @@
 var minDepth = function (root) {
   // recursion terminator
   if (root == null) return 0;
-  // process logic in current level
   if (root.left == null && root.right == null) return 1;
+
+  // process logic in current level
   // drill down
   let min_depth = Number.MAX_SAFE_INTEGER;
   if (root.right) {
