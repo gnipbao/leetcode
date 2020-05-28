@@ -10,7 +10,7 @@ function backtrack(path /**路径 */, list /**选择列表 */) {
         // 做选择
 
         // 回溯 下一层
-        backtrack(path, list)
+        backtrack(path.slice(), list)
 
         // 撤销选择
     }

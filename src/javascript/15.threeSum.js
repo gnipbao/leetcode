@@ -7,7 +7,9 @@ var threeSum = function (nums) {
   let ans = [];
   const len = nums.length;
   if (nums == null || len < 3) return ans;
-  nums.sort((a, b) => a - b); // 排序
+  nums.sort((a, b) => a - b); // sort
+
+  // double pointer
   for (let i = 0; i < len; i++) {
     // 剪枝
     if (nums[i] > 0) break; // 如果当前数字大于0，则三数之和一定大于0，所以结束循环
