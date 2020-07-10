@@ -15,8 +15,5 @@ var hasPathSum = function (root, sum) {
   if (!root) return false;
   if (root.left == null && root.right == null && sum == root.val) return true;
   // drill down
-  return (
-    hasPathSum(root.left, sum - root.val) ||
-    hasPathSum(root.right, sum - root.val)
-  );
+  return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
 };
